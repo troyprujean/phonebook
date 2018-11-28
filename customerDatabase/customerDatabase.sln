@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customerDatabase", "customerDatabase\customerDatabase.csproj", "{DBDA2BC3-CE12-489B-B55D-A7E2DB49A162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customerDatabase_Logic", "customerDatabase_Logic\customerDatabase_Logic.csproj", "{BCB7EEBA-94AC-4E5B-B38D-717E5E11586B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDA2BC3-CE12-489B-B55D-A7E2DB49A162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDA2BC3-CE12-489B-B55D-A7E2DB49A162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDA2BC3-CE12-489B-B55D-A7E2DB49A162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDA2BC3-CE12-489B-B55D-A7E2DB49A162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB7EEBA-94AC-4E5B-B38D-717E5E11586B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB7EEBA-94AC-4E5B-B38D-717E5E11586B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB7EEBA-94AC-4E5B-B38D-717E5E11586B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB7EEBA-94AC-4E5B-B38D-717E5E11586B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D70F781-7707-44A3-9ACD-FACB1D84E8BA}
+	EndGlobalSection
+EndGlobal

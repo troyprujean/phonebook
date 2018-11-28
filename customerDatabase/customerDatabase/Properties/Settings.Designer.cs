@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Phonebook.Properties
+namespace customerDatabase.Properties
 {
 
 
