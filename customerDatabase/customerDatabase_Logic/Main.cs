@@ -8,34 +8,25 @@ namespace customerDatabase_Logic
 {
     public class Main
     {
-        public static List<Customer> CustomerDB = new List<Customer>(); // List to store instantiaions of the Customer object
+        
         int listIndex; // Variable to store the list index (used for multiple events)
 
         /*-----------------------------------METHODS-----------------------------------*/
         public static void LoadDB()
         {
             // Initialize the customerDB list with pre-set instantiaions of the customer object 
-            CustomerDB.Add(new Customer("Jaarna", "Kereopa", "123-2514"));
-            CustomerDB.Add(new Customer("Sue", "Stook", "123-1263"));
-            CustomerDB.Add(new Customer("Jamie", "Allom", "123-3658"));
-            CustomerDB.Add(new Customer("Brian", "Janes", "123-9898"));
+            Data.CustomerDB.Add(new Customer("Jaarna", "Kereopa", "123-2514"));
+            Data.CustomerDB.Add(new Customer("Sue", "Stook", "123-1263"));
+            Data.CustomerDB.Add(new Customer("Jamie", "Allom", "123-3658"));
+            Data.CustomerDB.Add(new Customer("Brian", "Janes", "123-9898"));
         }
 
-        public static void ClearBoxes()
+        public static void ClearDisplay(object _item)
         {
-            // Clear the first name, last name and phone number text boxes
-            txtFirstName.Text = null;
-            txtLastName.Text = null;
-            txtPhone.Text = null;
+            _item = null;
         }
 
-        public static void ClearDisplay(listBox)
-        {
-            // Clear the list box
-            listBox.Items.Clear();
-        }
-
-        public void DisplayCustomers()
+        public static void DisplayCustomers()
         {
             // Check if the list is empty, if so, output an error message
             if (!CustomerDB.Any())

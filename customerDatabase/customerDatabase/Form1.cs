@@ -64,15 +64,17 @@ namespace customerDatabase
         private void btnListCustomers_Click(object sender, EventArgs e) // Click event for list customers button
         {
             // Clear the display, then display the customers on the list box
-            Main.ClearDisplay();
-            DisplayCustomers();
+            Main.ClearDisplay(lbxCustomers.Items);
+            Main.DisplayCustomers();
         }
 
         private void btnClearList_Click(object sender, EventArgs e) // Click event for the clear list button
         {
             // Clear the display, boxes, then set the input focus to the search text box and enable the add button
-            ClearDisplay();
-            ClearBoxes(); // Added the clearboxes method to prevent selected item on list from being retained when list is cleared
+            Main.ClearDisplay(lbxCustomers.Items);
+            Main.ClearDisplay(txtFirstName.Text);
+            Main.ClearDisplay(txtLastName.Text);
+            Main.ClearDisplay(txtPhone.Text); // Added the clearboxes method to prevent selected item on list from being retained when list is cleared
             txtSearch.Focus();
             btnAdd.Enabled = true;
         }
